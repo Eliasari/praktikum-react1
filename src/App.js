@@ -3,22 +3,32 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+<div class="container">
+      <div class="card col-sm-4">
+        <div class="card-header bg-danger text-white">
+          <h4>Hitung Harga Akhir</h4>
+        </div>
+        <div class="card-body">
+          Harga Awal
+          <input type="number" id="harga awal" class="form-control" />
+          PPN
+          <input type="number" id="ppn" class="form-control" />
+          Diskon
+          <input type="number" id="diskon" class="form-control" />
+          
+          <br></br>
+          <button type="button" class="btn btn-danger btn-block"
+          onclick="count()">
+            Hitung
+          </button>
+          <br></br>
+          <br></br>
+          Harga Akhir
+          <input type="text" id="hasil" class="form-control" readonly />
+        </div>
+      </div>
     </div>
+
   );
 }
 
